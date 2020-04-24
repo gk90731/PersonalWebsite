@@ -1,0 +1,9 @@
+.progress_bar_box{
+    position: relative;
+    width:168px;
+    height: 12px;
+    border: 2px solid rgb(46, 25, 2);
+    border-radius: 10px;
+    /* z-index: 10; */
+    
+}

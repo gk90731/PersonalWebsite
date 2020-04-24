@@ -1,0 +1,47 @@
+import React, { Component } from 'react';
+import { FaBell, FaBed, FaBath,FaPauseCircle,FaHeart,FaUser, FaDollarSign, FaLandmark, FaAngleDown, FaTextHeight, FaLocationArrow, FaSearchLocation, FaCalendar, FaCalendarWeek, FaCalendarDay, FaFilter, FaDumpster, FaDrumSteelpan, FaStopCircle, FaPlayCircle, FaHandPointRight, FaToggleOn, FaCompress, FaInfoCircle, FaIdBadge, FaAlignRight} from 'react-icons/fa';
+// import Cookies from 'js-cookie';
+import css from './style.css';
+class NavBar extends Component {
+    state={
+        showMenu:false
+    }
+    componentWillReceiveProps(){
+
+    }
+    
+    render()
+     { 
+          return ( 
+        <div className={css.navbar_div}>
+            <div className={css.brand}>
+                <span className={css.main}>TECH</span><span className={css.sub}>nology</span>
+            </div>
+            <div className={css.desktop_menu}>
+                        <span>PROTFOLIO</span>
+                        <span>PROJECTS</span>
+                        <span>INTERESTS</span>
+                        <span>BLOGS</span>
+                        <span>CONTACT</span>
+                </div>
+            <div>
+                <div className={css.menu_toggle} onClick={()=>{this.setState({showMenu:!this.state.showMenu})}}>
+                    <FaAlignRight className={css.toggle_button}/>
+                </div>
+                <div className={css.menu} style={{display:this.state.showMenu?"block":null}}>
+                    <div className={css.menu_block}>
+                        <div>PROTFOLIO</div>
+                        <div>PROJECTS</div>
+                        <div>INTERESTS</div>
+                        <div>BLOGS</div>
+                        <div>CONTACT</div>
+                    </div>
+                    
+                </div>s
+            </div>
+        </div>
+    );
+  }
+}
+
+export default NavBar;

@@ -1,0 +1,108 @@
+.navbar_div{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(41, 26, 9);
+    /* -webkit-filter: blur(43px); */
+    /* position: fixed; */
+}
+.menu{
+    display: none;
+    background-color: rgb(41, 26, 9);
+    color: white;
+    position: absolute;
+    z-index: 1;
+    height: 136px;
+    width: 28%;
+    /* margin-top: 50px; */
+    /* left: 7.7%; */
+    opacity: 0.8;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* margin: 49px 260.16px; */
+    position: absolute;
+    /* margin: 0px auto; */
+    margin: 50px 72%;
+}
+.menu_block{
+    display: flex; 
+    /* justify-content: space-around; */
+    display: inline-block;
+    text-align: right;
+    padding:8% 0% 0% 11%;
+    cursor: pointer;    
+    font-family:'Courier New', Courier, monospace ;
+}
+.desktop_menu{
+    display: none;
+}
+.main{
+    float: left;
+    padding: 7px 0px 0px 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+    font-size: 24px;
+    color: white;
+    /* text-shadow: 0px 0px 0px black; */
+}
+.sub{
+    float: left;
+    padding: 7px 0px 0px 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+    font-size: 24px;
+    color: white;
+}
+.menu_toggle{
+    float: right;
+    padding: 11px 10px 0px 0px;
+    color: white;
+    z-index: 1;
+}
+
+
+
+
+
+/* ==============================================================================================================================
+   ============================================================================================================================== */
+
+
+   @media (min-width: 1000px) {
+    .navbar_div{
+        height: 65px;
+        /* -webkit-filter: blur(43px); */
+        /* position: fixed; */
+    }
+    .toggle_button{
+        display: none;
+    }
+    .menu_block{
+        display: block;
+    }
+    .desktop_menu{
+        display: block;
+        float: right;
+        color: white;
+        margin-top: 21.5px;
+        font-weight: 500;
+        font-family:'Courier New', Courier, monospace ;
+        font-size: 18px;
+        
+    }
+    .desktop_menu span{
+        padding: 0px 60px 0px 0px;
+        cursor: pointer;
+    }
+    .desktop_menu span:hover{
+        color: rgb(105, 105, 105);
+    }
+    .main{
+        font-size: 29px;
+        margin: 3px;
+        /* text-shadow: 0px 0px 0px black; */
+    }
+    .sub{
+        font-size: 29px;
+        margin: 3px;
+    }
+    } 

@@ -1,0 +1,12 @@
+.footer{
+    background-color: rgb(100, 99, 99);
+    padding: 10px;
+    color: white;
+    font-size:14px;
+    font-family:'Courier New', Courier, monospace ; 
+}
+@media (min-width: 1000px) {
+    .footer{
+        padding-left: 42%;
+    }
+}
