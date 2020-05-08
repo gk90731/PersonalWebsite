@@ -14,7 +14,7 @@ class PostTopic extends Component {
     componentDidMount(){
       axios({
         method: 'get',
-        url: 'http://127.0.0.1:8000/api/post/',
+        url: '/api/post/',
         headers: {
           // 'Authorization':"Token 0997d283d37828b28126eb7d3aa008c647816135"
         }

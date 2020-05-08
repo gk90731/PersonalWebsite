@@ -185,4 +185,7 @@
         height: auto;
         margin: 0 auto;
     }
+    .post_heading{
+        font-size: 7.0vh;
+    }
 }

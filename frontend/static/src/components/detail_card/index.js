@@ -41,7 +41,7 @@ class DetailCard extends Component {
         this.props.item.state!=undefined?this.setState({data:this.props.item.state.detail})
         :axios({
           method: 'options',
-          url: 'http://127.0.0.1:8000/api/post/',
+          url: '/api/post/',
           headers: {
             // 'Authorization':"Token 0997d283d37828b28126eb7d3aa008c647816135"
           }, 
@@ -63,7 +63,7 @@ class DetailCard extends Component {
     handleLike = (id) =>{
       axios({
         method: 'put',
-        url: 'http://127.0.0.1:8000/api/post/',
+        url: '/api/post/',
         headers: {
           // 'Authorization':"Token 0997d283d37828b28126eb7d3aa008c647816135"
         }, 

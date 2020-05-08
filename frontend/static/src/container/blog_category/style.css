@@ -50,3 +50,8 @@
     width: 100%;
     height: 93%;
 }
+@media (max-width: 350px) {
+    .post_button button{
+        font-size: 13px;
+    }
+}
