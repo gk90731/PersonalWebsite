@@ -1,0 +1,16 @@
+.container{
+    background-image: radial-gradient(circle at 22% 15%, rgba(45, 45, 45,0.05) 0%, rgba(45, 45, 45,0.05) 50%,rgba(95, 95, 95,0.05) 50%, rgba(95, 95, 95,0.05) 100%),radial-gradient(circle at 83% 16%, rgba(122, 122, 122,0.05) 0%, rgba(122, 122, 122,0.05) 50%,rgba(194, 194, 194,0.05) 50%, rgba(194, 194, 194,0.05) 100%),radial-gradient(circle at 74% 7%, rgba(82, 82, 82,0.05) 0%, rgba(82, 82, 82,0.05) 50%,rgba(230, 230, 230,0.05) 50%, rgba(230, 230, 230,0.05) 100%),linear-gradient(335deg, rgb(161,107,45),rgb(46,25,2));    /* height: 91vh; */
+    /* height: 91vh; */
+    min-height: 98vh;
+    /* position: fixed; */
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.loader{
+    position: relative;
+    left:35%;
+    top:100%;
+}
+

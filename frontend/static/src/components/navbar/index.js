@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FaBell, FaBed, FaBath,FaPauseCircle,FaHeart,FaUser, FaDollarSign, FaLandmark, FaAngleDown, FaTextHeight, FaLocationArrow, FaSearchLocation, FaCalendar, FaCalendarWeek, FaCalendarDay, FaFilter, FaDumpster, FaDrumSteelpan, FaStopCircle, FaPlayCircle, FaHandPointRight, FaToggleOn, FaCompress, FaInfoCircle, FaIdBadge, FaAlignRight} from 'react-icons/fa';
 // import Cookies from 'js-cookie';
 import css from './style.css';
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 class NavBar extends Component {
     state={
         showMenu:false
@@ -21,7 +22,7 @@ class NavBar extends Component {
                         <span>PROTFOLIO</span>
                         <span>PROJECTS</span>
                         <span>INTERESTS</span>
-                        <span>BLOGS</span>
+                        <Link className={css.Link} to="/blog"><span>BLOGS</span></Link>
                         <span>CONTACT</span>
                 </div>
             <div>
@@ -33,7 +34,7 @@ class NavBar extends Component {
                         <div>PROTFOLIO</div>
                         <div>PROJECTS</div>
                         <div>INTERESTS</div>
-                        <div>BLOGS</div>
+                        <Link className={css.Link} to="/blog"><span>BLOGS</span></Link>
                         <div>CONTACT</div>
                     </div>
                     

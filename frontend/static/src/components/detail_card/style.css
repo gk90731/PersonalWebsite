@@ -1,0 +1,188 @@
+.container{
+    background-image: radial-gradient(circle at 22% 15%, rgba(45, 45, 45,0.05) 0%, rgba(45, 45, 45,0.05) 50%,rgba(95, 95, 95,0.05) 50%, rgba(95, 95, 95,0.05) 100%),radial-gradient(circle at 83% 16%, rgba(122, 122, 122,0.05) 0%, rgba(122, 122, 122,0.05) 50%,rgba(194, 194, 194,0.05) 50%, rgba(194, 194, 194,0.05) 100%),radial-gradient(circle at 74% 7%, rgba(82, 82, 82,0.05) 0%, rgba(82, 82, 82,0.05) 50%,rgba(230, 230, 230,0.05) 50%, rgba(230, 230, 230,0.05) 100%),linear-gradient(335deg, rgb(161,107,45),rgb(46,25,2));    /* height: 91vh; */
+    /* height: 91vh; */
+    min-height: 93vh;
+    /* position: fixed; */
+    background-attachment: fixed;
+    margin-top: -9px;
+}
+.parent_container{
+    /* background-color: aqua; */
+    width: 77%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white
+}
+.background_banner{
+    position: relative;
+    width: 75%;
+    height: 173px;
+    /* left: 50%; */
+    /* top: 0%; */
+    margin-top: 9px;
+    /* margin-left: -300px; */
+    margin-left: 12%;
+    z-index: 1;
+    background-color: #FD5C24;
+    overflow: hidden;
+}
+.content_box{
+    /* background-color: blue; */
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* left: 50%; */
+    /* top: 0%; */
+    margin-top: -158px;
+    /* z-index: -1; */
+    /* margin-left: -300px; */
+    /* margin-left: 38px; */
+    overflow: hidden;
+    padding-bottom: 29px;
+    box-shadow: 0px 15px 20px 0px #271500;
+}
+.post_heading{
+    /* background-color: black;  */
+    font-family: serif;
+    font-weight: 600;
+    position: relative;
+    width: 90%;
+    height: auto;
+    font-size: 7.4vh;
+    /* left: 50%; */
+    /* top: 0%; */
+    margin-top: 181px;
+    /* z-index: -1; */
+    /* margin-left: -300px; */
+    margin-left: 5%;
+    overflow: hidden;
+    line-height: 2;
+}
+.content{
+    /* background-color: white; */
+    position: relative;
+    font-size: 18px;
+    font-family: inherit;
+    width: 90%;
+    height: auto;
+    /* left: 50%; */
+    /* top: 0%; */
+    margin-top: 18px;
+    /* z-index: -1; */
+    /* margin-left: -300px; */
+    margin-left: 5%;
+    overflow: hidden;
+}
+.author_name{
+    /* background-color: white;  */
+    position: relative;
+    width: 51%;
+    height: 24px;
+    /* font-size: 3vmin; */
+    /* left: 50%; */
+    /* top: 0%; */
+    font-family: cursive;
+    font-weight: 500;
+    margin-top: 10px;
+    /* z-index: -1; */
+    margin-left: 44%;
+    overflow: hidden;
+}
+.author_detail{
+    /* background-color: white;  */
+    position: relative;
+    width: 51%;
+    height: 24px;
+    font-family: initial;
+    /* left: 50%; */
+    /* top: 0%; */
+    margin-top: 4px;
+    /* z-index: -1; */
+    margin-left: 44%;
+    overflow: hidden;
+}
+.comment_box{
+    background-color: white;
+    position: relative;
+    width: 90%;
+    height: 329px;
+    /* left: 50%; */
+    /* top: 0%; */
+    margin-top: 22px;
+    /* z-index: -1; */
+    /* margin-left: -300px; */
+    margin-left: 5%;
+    overflow: hidden;
+}
+.like_share{
+    position: fixed;
+    top: 64%;
+    left: 81%;
+    height: 20em;
+    width: 5em;
+    overflow: hidden;
+}
+.like_box{
+    position: relative;
+    overflow: hidden;
+    height: 53px;
+    width: 53px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    /* -webkit-box-shadow: -1px 6px 73px -6px rgba(0,0,0,0.3);
+    -moz-box-shadow: -1px 6px 73px -6px rgba(0,0,0,0.3);
+    box-shadow: -1px 6px 73px -6px rgba(0,0,0,0.3); */
+    box-shadow:0 5px 15px -15px rgba(1.3, 1.4, 3.3, 0.1), inset 0 -47px 19px -14px rgba(75, 75, 75, 0.1);
+    cursor: pointer;
+}
+.like_icon{
+    position: relative;
+    font-size: 30.3px;
+    margin: 0.3em 0em 0em 0.3em;
+    color: rgb(87, 87, 87);
+}
+.like_count{
+    position: relative;
+    margin: -0.1em 0em 0em 2.2em;
+    font-size: 8.3px;
+}
+.share_box{
+    position: relative;
+    height: 53px;
+    width: 53px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:0 5px 15px -15px rgba(1.3, 1.4, 3.3, 0.1), inset 0 -47px 19px -14px rgba(75, 75, 75, 0.1);
+}
+.share_icon{
+    position: relative;
+    font-size: 37px;
+    margin: 0.24em 0em 0em 0.1em;
+    color: rgb(87, 87, 87);
+}
+.social_media{
+    display: none;
+    position: fixed;
+    top: 0%;
+    top: 31%;
+    left: 81.5%;
+}
+.loader{
+    position: relative;
+    left:35%;
+    top:100%;
+}
+/* ================================================================================================================
+   ================================================================================================================ */
+@media (max-width: 600px) {
+    .parent_container{
+        /* background-color: aqua; */
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}

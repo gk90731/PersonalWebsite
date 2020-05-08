@@ -1,11 +1,9 @@
 .coloured_bg{
-    height:813px ;
-    width:100%;
+    height: 1000px;
+    width: 100%;
     /* -webkit-filter: blur(43px); */
-    /* border:5px 5px 5px 5px solid blue; */
     /* background-color: rgb(75, 47, 16); */
     background-color: black;
-
     opacity: 0.65;
 }
 .banner_content{

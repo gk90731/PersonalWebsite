@@ -1,0 +1,255 @@
+.parent_card{
+    height: 263px;
+    overflow: hidden;
+}
+.content_card{
+    position: absolute;
+    width: 85%;
+    height: 239px;
+    /* left: 50%; */
+    /* top: 0%; */
+    margin-top: 11px;
+    /* margin-left: -300px; */
+    margin-left: 38px;
+    overflow: hidden;
+    box-shadow: 0px 1px 16px 1px #5d3000;
+}
+.author_name{
+    position: absolute;
+    width: 40%;
+    height: 22px;
+    left: 42%;
+    /* top: 0%; */
+    margin-top: 37px;
+    /* margin-left: -300px; */
+    /* margin-left: 78px; */
+    overflow: hidden;
+    font-size: 1.7vmin;
+    font-weight: 600;
+    color:rgb(184, 128, 64);
+    
+}
+.author_details{
+    position: absolute;
+    width: 56%;
+    height: 14px;
+    left: 42%;
+    top: 57px;
+    /* margin-top: 57px; */
+    /* margin-left: -300px; */
+    /* margin-left: 78px; */
+    overflow: hidden;
+    font-size: 1.3vmin;
+    font-weight: 500;
+    color:rgb(184, 128, 64);
+}
+.post_topic_name{
+    position: absolute;
+    width: 56%;
+    height: 46px;
+    left: 42%;
+    top: 77px;
+    /* margin-top: 57px; */
+    /* margin-left: -300px; */
+    /* margin-left: 78px; */
+    overflow: hidden;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: white;
+}
+.post_topic_details{
+    position: absolute;
+    width: 56%;
+    height: 46px;
+    left: 42%;
+    top: 127px;
+    /* margin-top: 57px; */
+    /* margin-left: -300px; */
+    /* margin-left: 78px; */
+    overflow: hidden;
+    font-size: 1.3vmin;
+    font-weight: 500;
+    color:rgb(184, 128, 64);
+}
+.read_more{
+    position: absolute;
+    left: 42%;
+    top: 175px;
+    padding: 1px 13px 3px 13px;
+    border-radius: 30px;
+    color: white;
+    border-color: white;
+    border: 1px solid;
+    background-color: transparent;
+}
+.comment{
+    position: absolute;
+    width: 10%;
+    height: 30px;
+    left: 75%;
+    top: 175px;
+    /* margin-top: 57px; */
+    /* margin-left: -300px; */
+    /* margin-left: 78px; */
+    overflow: hidden;
+    color: white;
+}
+.clap{
+    position: absolute;
+    width: 10%;
+    height: 30px;
+    left: 85%;
+    top: 175px;
+    /* margin-top: 57px; */
+    /* margin-left: -300px; */
+    /* margin-left: 78px; */
+    overflow: hidden;
+    color: white;
+}
+.like_count{
+    position: relative;
+    top: 3px;
+    left: 2px;
+    font-size: 11px;
+}
+.picture_card{
+    position: absolute;
+    width: 31%;
+    height: 185px;
+    /* left: 50%; */
+    /* top: 0%; */
+    margin-top: 38px;
+    /* margin-left: -300px; */
+    margin-left: 26px;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* ==========================================================================================================
+   ========================================================================================================== */
+
+@media (max-width: 600px) {
+    .parent_card{
+        height: 488px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .content_card{
+        position: absolute;
+        width: 76%;
+        height: 445px;
+        /* left: 50%; */
+        /* top: 0%; */
+        margin-top: 22px;
+        /* margin-left: -300px; */
+        margin-left: 38px;
+        overflow: hidden;
+        box-shadow: 0px 1px 16px 1px #5d3000;
+    }
+    .author_name{
+        position: absolute;
+        width: 40%;
+        height: 22px;
+        left: 8%;
+        /* top: 0%; */
+        
+        margin-top: 231px;
+        /* margin-left: -300px; */
+        /* margin-left: 78px; */
+        overflow: hidden;
+        font-size: 2.3vh;
+        font-weight: 600;
+        color:rgb(184, 128, 64);
+    }
+    .author_details{
+        position: absolute;
+        width: 81%;
+        height: 14px;
+        left: 8%;
+        top: 251px;
+        /* margin-top: 57px; */
+        /* margin-left: -300px; */
+        /* margin-left: 78px; */
+        overflow: hidden;
+        font-size: 1.7vh;
+        font-weight: 500;
+        color:rgb(184, 128, 64);
+    }
+    .post_topic_name{
+        position: absolute;
+        width: 84%;
+        height: 47px;
+        left: 9%;
+        top: 279px;
+        /* margin-top: 57px; */
+        /* margin-left: -300px; */
+        /* margin-left: 78px; */
+        overflow: hidden;
+        font-size: 2.6vh;
+        font-weight: 500;
+        color: white;
+        
+    }
+    .post_topic_details{
+        position: absolute;
+        width: 84%;
+        height: 57px;
+        left: 9%;
+        top: 331px;
+        /* margin-top: 57px; */
+        /* margin-left: -300px; */
+        /* margin-left: 78px; */
+        overflow: hidden;
+        font-size: 1.5vh;
+        font-weight: 500;
+        color:rgb(184, 128, 64);
+    }
+    .read_more{
+        position: absolute;
+        left: 9%;
+        top: 399px;
+        padding: 1px 13px 3px 13px;
+        border-radius: 30px;
+        color: white;
+        border-color: white;
+        border: 1px solid;
+        background-color: transparent;
+    }
+    .comment{
+        position: absolute;
+        width: 21%;
+        height: 30px;
+        left: 52%;
+        top: 398px;
+        /* margin-top: 57px; */
+        /* margin-left: -300px; */
+        /* margin-left: 78px; */
+        overflow: hidden;
+        color: white;
+    }
+    .clap{
+        position: absolute;
+        width: 21%;
+        height: 30px;
+        left: 74%;
+        top: 398px;
+        /* margin-top: 57px; */
+        /* margin-left: -300px; */
+        /* margin-left: 78px; */
+        overflow: hidden;
+        color: white;
+    }
+    .picture_card{
+        position: absolute;
+        width: 66%;
+        height: 185px;
+        /* left: 50%; */
+        /* top: 0%; */
+        margin-top: 12px;
+        /* margin-left: -300px; */
+        margin-left: 56px;
+        background-color: white;
+        overflow: hidden;
+    }
+    
+}
