@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import css from './style.css';
 import NavBar from '../../components/navbar';
 
-import {FaPlus, FaTelegram, FaDownload} from 'react-icons/fa';
+import {FaPlus, FaTelegram, FaDownload, FaAngleDown} from 'react-icons/fa';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
@@ -20,7 +20,7 @@ class BlogCategory extends Component {
         this.props.getBlogCategory()
     }
     render() {
-        console.log(this.props.Status.GET_BLOG_CATEGORY)
+        console.log(this.props.Status.GET_BLOG_CATEGORY+"yessss")
         return (
             <div >
                 <NavBar/>
@@ -31,50 +31,31 @@ class BlogCategory extends Component {
                         <div className="col-md-6">
                             <div className={css.parent_card}>
                             <div className={css.post_button}>
-                            <Link className={css.Link} to="/createBlog"><button>Add New Post</button></Link>
+                            <Link className={css.Link} to="/createBlog"><button>Add New Blog</button></Link>
                             </div>
 
 
+                            {this.props.Status.GET_BLOG_CATEGORY!=undefined
 
+                            ?this.props.Status.GET_BLOG_CATEGORY.map((item)=><>
                             <ExpansionPanel >
-                            <ExpansionPanelSummary expandIcon = {<FaPlus style={{ fontSize: 16, color:'#222' }}/>}>
-                                {this.props.Status.GET_BLOG_CATEGORY!=undefined
-                                ?this.props.Status.GET_BLOG_CATEGORY.categories.map((item)=><span className={css.skill}>{item.category_name}</span>)
-                                :null}
+                            <ExpansionPanelSummary expandIcon = {<FaAngleDown style={{ fontSize: 16, color:'#222' }}/>}>
+                            <span className={css.skill}>{item.category_name}</span>
                             </ExpansionPanelSummary>
+                            {item.sub_category_set.map((sub_item)=><>
                             <ExpansionPanelDetails>
                             <div className={css.skill_divisions}>
-                            {this.props.Status.GET_BLOG_CATEGORY!=undefined
-                                ?this.props.Status.GET_BLOG_CATEGORY.sub_categories.map((item)=><span className={css.card_label}>{item.sub_category_name}</span>)
-                                :null}
+                            <span className={css.card_label}>{sub_item.sub_category_name}</span>
                             </div>
                             <hr/>
                             </ExpansionPanelDetails>
+                            </>)}
                             </ExpansionPanel>
                             <br/>
+                            </>)
 
-
-
-
-
-
-
-                            {/* <ExpansionPanel >
-                            <ExpansionPanelSummary expandIcon = {<FaPlus style={{ fontSize: 16, color:'#222' }}/>}>
-                                {this.props.Status.GET_BLOG_CATEGORY!=undefined
-                                ?this.props.Status.GET_BLOG_CATEGORY.categories.map((item)=><span className={css.skill}>{item.category_name}</span>)
-                                :null}
-                            </ExpansionPanelSummary>
-                            <ExpansionPanelDetails>
-                            <div className={css.skill_divisions}>
-                            {this.props.Status.GET_BLOG_CATEGORY!=undefined
-                                ?this.props.Status.GET_BLOG_CATEGORY.sub_categories.map((item)=><span className={css.card_label}>{item.sub_category_name}</span>)
-                                :null}
-                            </div>
-                            <hr/>
-                            </ExpansionPanelDetails>
-                            </ExpansionPanel>
-                            <br/> */}
+                            :null}
+                            
                             
                             </div>
                         </div>

@@ -8,12 +8,14 @@ class PostSerializer(serializers.ModelSerializer):
         fields = '__all__'
         depth  = 1
 
-class CategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model  = Category
-        fields = '__all__'
 
 class Sub_CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model  = Sub_Category
-        fields = '__all__'
+        fields = ('sub_category_name',)
+
+class CategorySerializer(serializers.ModelSerializer):
+    sub_category_set = Sub_CategorySerializer(many=True)
+    class Meta:
+        model  = Category
+        fields = ('category_name', 'sub_category_set')

@@ -31,6 +31,16 @@
     color: #9c9c9c;
 }
 
+.Link{
+    text-decoration: none;
+    color: #9c9c9c;
+}
+
+.Link:hover{
+    text-decoration: none;
+    color: #9c9c9c;
+}
+
 .title_box{
     height: 2.5rem;
     width: 91%;
@@ -92,6 +102,17 @@
     font-size: 13px;
     color: #9c9c9c;
     font-weight: 600;
+}
+
+.upload_text1{
+    position: relative;
+    top: 0.41rem;
+}
+
+.upload_text2{
+    position: relative;
+    bottom: 1.3rem;
+    left: 7.4rem;
 }
 
 .select_category_box{

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import css from './style.css';
 import NavBar from '../../components/navbar/index.js';
 import Banner from '../../components/banner/index.js'
-import {FaPlus, FaTelegram, FaDownload} from 'react-icons/fa';
+import {FaTelegram, FaDownload, FaAngleDown} from 'react-icons/fa';
 
 import leader from './leader.jpg';
 import team from './team.jpg';
@@ -75,7 +75,7 @@ class Protfolio extends Component {
                     </div>
                     <div className={css.skill_content}>
                         <ExpansionPanel >
-                            <ExpansionPanelSummary expandIcon = {<FaPlus style={{ fontSize: 16, color:'#222' }}/>}>
+                            <ExpansionPanelSummary expandIcon = {<FaAngleDown style={{ fontSize: 16, color:'#222' }}/>}>
                                 <span className={css.skill}>WebDevelopment</span>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
@@ -125,7 +125,7 @@ class Protfolio extends Component {
                         </ExpansionPanel>
                         <br/>
                         <ExpansionPanel >
-                        <ExpansionPanelSummary expandIcon = {<FaPlus style={{ fontSize: 16, color:'#222' }}/>}>
+                        <ExpansionPanelSummary expandIcon = {<FaAngleDown style={{ fontSize: 16, color:'#222' }}/>}>
                                 <span className={css.skill}>Machine Learning</span>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
@@ -174,7 +174,7 @@ class Protfolio extends Component {
                         </ExpansionPanel>
                         <br/>
                         <ExpansionPanel>
-                        <ExpansionPanelSummary expandIcon = {<FaPlus style={{ fontSize: 16, color:'#222' }}/>}>
+                        <ExpansionPanelSummary expandIcon = {<FaAngleDown style={{ fontSize: 16, color:'#222' }}/>}>
                                 <span className={css.skill}>IOT</span>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
@@ -223,7 +223,7 @@ class Protfolio extends Component {
                         </ExpansionPanel>
                         <br/>
                         <ExpansionPanel >
-                        <ExpansionPanelSummary expandIcon = {<FaPlus style={{ fontSize: 16, color:'#222' }}/>}>
+                        <ExpansionPanelSummary expandIcon = {<FaAngleDown style={{ fontSize: 16, color:'#222' }}/>}>
                                 <span className={css.skill}>DevOps.</span>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>

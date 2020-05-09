@@ -53,6 +53,14 @@
     font-size: 11px;
     width:100px;
 }
+.Link{
+    text-decoration: none;
+    color: white;
+}
+.Link:hover{
+    text-decoration: none;
+    color: white;
+}
 .banner_arrow{
     position: absolute;
     top: 110px;

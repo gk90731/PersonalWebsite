@@ -16,10 +16,10 @@ class NavBar extends Component {
           return ( 
         <div className={css.navbar_div}>
             <div className={css.brand}>
-                <span className={css.main}>TECH</span><span className={css.sub}>nology</span>
+                <Link className={css.Link} to="/"><span className={css.main}>TECH</span><span className={css.sub}>nology</span></Link>
             </div>
             <div className={css.desktop_menu}>
-                        <span>PROTFOLIO</span>
+                        <Link className={css.Link} to="/"><span>PROTFOLIO</span></Link>
                         <span>PROJECTS</span>
                         <span>INTERESTS</span>
                         <Link className={css.Link} to="/blog"><span>BLOGS</span></Link>
@@ -31,7 +31,7 @@ class NavBar extends Component {
                 </div>
                 <div className={css.menu} style={{display:this.state.showMenu?"block":null}}>
                     <div className={css.menu_block}>
-                        <div>PROTFOLIO</div>
+                        <Link className={css.Link} to="/"><span>PROTFOLIO</span></Link>
                         <div>PROJECTS</div>
                         <div>INTERESTS</div>
                         <Link className={css.Link} to="/blog"><span>BLOGS</span></Link>
