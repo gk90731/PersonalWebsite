@@ -4,7 +4,8 @@ import Protfolio from '../container/protfolio/index.js';
 import AddBlog from '../container/add_blog';
 import BlogCategory from '../container/blog_category';
 import PostTopic from '../container/post_topic';
-import PostDetail from '../container/post_detail'
+import PostDetail from '../container/post_detail';
+import Formatter from '../container/formatter'
 export default class Routes extends Component {
     render() {
         
@@ -20,6 +21,7 @@ export default class Routes extends Component {
                     <Route path="/blogTopic" {...this.props} component={PostTopic}></Route>
                     <Route path="/bolgDetail/:Id" {...this.props} component={PostDetail}></Route>
                     
+                    <Route path="/exp" component={Formatter}></Route>
                 </Switch>
             </Router>
         </div>

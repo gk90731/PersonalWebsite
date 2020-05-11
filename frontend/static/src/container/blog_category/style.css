@@ -50,6 +50,26 @@
     width: 100%;
     height: 93%;
 }
+
+.all_posts{
+    display: grid;
+}
+
+.all_posts .skill{
+    border: 1px solid white;
+    color: #000000cc;
+    background-color: white;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:#000000cc
+}
+a:hover{
+    text-decoration: none;
+    color: #000000cc;
+}
 @media (max-width: 350px) {
     .post_button button{
         font-size: 10px;

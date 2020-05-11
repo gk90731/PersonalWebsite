@@ -55,7 +55,10 @@ class BlogCategory extends Component {
                             </>)
 
                             :null}
-                            
+                            <div className={css.all_posts}>
+                            <span className={css.skill}><a href='/#/blogTopic'>See All Posts</a></span>
+                            </div>
+                            <br/>
                             
                             </div>
                         </div>

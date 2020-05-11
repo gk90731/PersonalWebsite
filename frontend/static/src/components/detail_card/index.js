@@ -19,6 +19,9 @@ import {
   EmailIcon,
 } from "react-share";
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import JsxParser from 'react-jsx-parser';
+import {Node} from 'react-mathjax2';
+import MathJax from 'react-mathjax2';
 import Loader from 'react-loader-spinner';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import axios from 'axios';
@@ -97,7 +100,12 @@ class DetailCard extends Component {
                 {this.state.data.title}
                 </div>
                 <div className={css.content}>
-                {ReactHtmlParser(this.state.data.content)}
+                  <MathJax.Context>
+                  <JsxParser
+                      components={{Node}}
+                      jsx={this.state.data.content.replace(/&lt;formula/g,"<Node inline>{'").replace(/formula&gt;/g,"'}</Node>")}
+                  />
+                  </MathJax.Context>
                 </div>
                 <div className={css.author_name}>By {this.state.data.author_name.split(',')}</div>
                 <div className={css.author_detail}>{this.state.data.author_detail.split(',')}</div>
