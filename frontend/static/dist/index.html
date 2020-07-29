@@ -10,9 +10,22 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous"
   />
-   
+  @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
     <title>React - Hello</title>
-    
+    <style>
+      .modal.fade .modal-dialog {
+    /* transition: -webkit-transform .3s ease-out; */
+    /* transition: transform .3s ease-out; */
+    /* transition: transform .3s ease-out,-webkit-transform .3s ease-out; */
+    /* -webkit-transform: translate(0,-50px); */
+    /* transform: translate(0,-50px); */
+    /* transition: all .55s linear; */
+    transform: scale(0);
+    /* opacity: 0; */
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .55s linear;}
+    </style>
   </head>
   <body>
     <div id="app"></div>

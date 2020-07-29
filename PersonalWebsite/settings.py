@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-
+# import psycopg2
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
@@ -28,7 +28,12 @@ SECRET_KEY = 'f479o0doic3ok#c^@ilbhus^9)i858e$w43rp64x=!%b&ysx5w'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'projektclubbit@gmail.com'
+EMAIL_HOST_PASSWORD = '9801319162'
+EMAIL_PORT = 587
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 # Application definition
 
@@ -40,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'import_export',
     'frontend',
     'blog'
 ]
@@ -79,11 +85,25 @@ WSGI_APPLICATION = 'PersonalWebsite.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'personalWebsite',
+
+        'USER': 'personalWebsite',
+
+        'PASSWORD': '123456789',
+
+        'HOST': 'personalwebsite.c8ybyhqqgwiq.us-east-2.rds.amazonaws.com',
+
+        'PORT': '5432',
+
     }
+
 }
+
 
 
 # Password validation
@@ -124,3 +144,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

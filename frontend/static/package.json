@@ -13,6 +13,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
@@ -50,6 +51,7 @@
     "react-share": "^4.1.0",
     "react-toastify": "^5.5.0",
     "react-typist": "^2.0.5",
+    "reactjs-popup": "^1.5.0",
     "reactstrap": "^8.4.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",

@@ -11,8 +11,21 @@ export default function (state = [], action) {
                 ...state,
                 GET_BLOG_CATEGORY:action.payload};
             break;
-
-
+        case 'GET_SKILL': //get skills reducer
+            return {
+                ...state,
+                GET_SKILL:action.payload};
+            break;
+        case 'GET_RESUME': //get myResume reducer
+            return {
+                ...state,
+                GET_RESUME:action.payload};
+            break;
+        case 'LEAVE_MESSAGE': //leave message reducer
+            return {
+                ...state,
+                LEAVE_MESSAGE:action.payload};
+            break;
         // ********************************************
         case 'MY_USER_DETAIL': //get myUserDetail reducer
             return {

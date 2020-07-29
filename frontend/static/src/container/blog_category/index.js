@@ -8,7 +8,6 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelActions from '@material-ui/core/ExpansionPanelActions';
 import ProgressBar from '../../components/progress_bar/index.js';
-
 import Cookies from 'js-cookie';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';

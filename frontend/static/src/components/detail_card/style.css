@@ -101,8 +101,8 @@
     margin-left: 44%;
     overflow: hidden;
 }
-.comment_box{
-    background-color: white;
+.comment_div{
+    background-color: pink;
     position: relative;
     width: 90%;
     height: 329px;
@@ -113,6 +113,23 @@
     /* margin-left: -300px; */
     margin-left: 5%;
     overflow: hidden;
+}
+.comment_head{
+}
+hr{
+    
+    border: 0;
+    border-top: 1.8px solid rgba(0,0,0,0.2);
+}
+.name_box{
+}
+.email_box{
+}
+.photo_head{
+}
+.photo_box{
+}
+.comment_box{
 }
 .like_share{
     position: fixed;

@@ -109,9 +109,15 @@ class DetailCard extends Component {
                 </div>
                 <div className={css.author_name}>By {this.state.data.author_name.split(',')}</div>
                 <div className={css.author_detail}>{this.state.data.author_detail.split(',')}</div>
-                {/* <div className={css.comment_box}>
-                
-                </div> */}
+                <div className={css.comment_div}>
+                  <span className={css.comment_head}></span>
+                  <hr/>
+                  <div className={css.name_box}></div>
+                  <div className={css.email_box}></div>
+                  <div className={css.photo_head}></div>
+                  <div className={css.photo_box}></div>
+                  <div className={css.comment_box}></div>
+                </div>
               </div>
             </div>
         </div>
@@ -188,6 +194,7 @@ class DetailCard extends Component {
             </EmailShareButton>
           </div>
           </div></div>:<Loader className={css.loader} type="Bars" color="#FD5C24" height={80} width={80} />}
+          
         </>
     );
   }

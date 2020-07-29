@@ -1,4 +1,6 @@
 from django.shortcuts               import render
+from wsgiref.util                   import FileWrapper
+from django.conf                    import settings
 from rest_framework.views           import APIView
 from rest_framework.decorators      import api_view,authentication_classes,permission_classes,parser_classes
 from rest_framework.parsers         import MultiPartParser, FormParser, JSONParser, FileUploadParser 
@@ -6,12 +8,16 @@ from rest_framework.response        import Response
 from rest_framework                 import status
 from rest_framework.permissions     import IsAuthenticated
 from django.utils.functional        import SimpleLazyObject
-from django.http                    import JsonResponse,HttpResponse
+from django.http                    import JsonResponse,HttpResponse,Http404
 from django.views.decorators.csrf   import csrf_exempt
 
 
-from . models       import Category, Sub_Category, Post
-from . serializers  import PostSerializer, CategorySerializer, Sub_CategorySerializer
+from . models       import Category, Sub_Category, Post, Skills_Category
+from . serializers  import PostSerializer, CategorySerializer, Sub_CategorySerializer, Skills_CategorySerializer
+
+import mimetypes
+import os
+from pathlib import Path
 
 
 class PostsView(APIView):
@@ -21,7 +27,7 @@ class PostsView(APIView):
         return Response(serializer.data)
     
     def options(self, request, format=None):
-        post        = Post.objects.all().filter(id=request.data["postId"])
+        post        = Post.objects.all().filter(id=3)
         serializer  = PostSerializer(post, many=True)
         return Response(serializer.data)
     
@@ -49,3 +55,23 @@ class CategorySubCategory(APIView):
         categories                      = Category.objects.all().order_by('-id')
         categories_serializer           = CategorySerializer(categories, many=True)
         return Response(categories_serializer.data)
+
+
+class SkillView(APIView):
+    def get(self, request, format=None):
+        skill_categories                      = Skills_Category.objects.all().order_by('id')
+        skill_categories_serializer           = Skills_CategorySerializer(skill_categories, many=True)
+        return Response(skill_categories_serializer.data)
+
+
+def download_resume(request):
+    if request.method == 'GET':
+        # get an open file handle (I'm just using a file attached to the model for this example):
+        from PersonalWebsite.settings import MEDIA_ROOT
+        my_path                         = MEDIA_ROOT+'\\gauravResume.pdf'
+        FilePointer                     = open(my_path, 'rb') #getting the file object in binary format
+        response                        = HttpResponse(FilePointer,content_type='application/pdf')
+        response['Content-Disposition'] = 'attachment; filename=gauravResume.pdf'
+        return response
+
+    raise Http404

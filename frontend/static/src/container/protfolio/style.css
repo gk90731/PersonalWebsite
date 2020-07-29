@@ -82,12 +82,22 @@
     /* -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1.0), transparent); */
 }
 .moto_mask{
-    height: 82px;
+    height: 70.1px;
     width: 100%;
     background-color: #251707;
     opacity: 0.8;
     position: relative;
-    bottom: 83px;
+    bottom: 0px;
+    top: -69px;
+}
+.hire_mask{
+    height: 100.1px;
+    width: 100%;
+    background-color: #251707;
+    opacity: 0.8;
+    position: relative;
+    bottom: 65px;
+    top: -101px;
 }
 .content_text{
     position: relative;
@@ -100,8 +110,21 @@
     bottom: 0px;
     bottom: 163px;
 }
+.moto_text{
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 0px;
+    bottom: 131px;
+    left: 5px;
+}
+
 .content_text p{
-    padding: 3px 0px 0px 8px;
+    position: relative;
+    top: -39px;
+    padding: 3px 0px 0px 7px;
     overflow: hidden;
 }
 .content_img_mask{
@@ -270,6 +293,7 @@
     color:rgb(161, 107, 45);
     position: relative;
     top: 30px;
+    cursor: pointer;
 }
 ::placeholder {
     color: rgb(158, 134, 107);
@@ -283,7 +307,56 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
    color: rgb(158, 134, 107);
   }
+.anchor{
+    color:unset;
+}
+.anchor:hover{
+    color:unset;
+    text-decoration: none;
+}
+.modal_transition{
+    /* transition: -webkit-transform .3s ease-out;  */
+    /* transition: transform .3s ease-out; */
+    /* transition: transform .3s ease-out,-webkit-transform .3s ease-out; */
+    /* -webkit-transform: translate(0,-50px); */
+    /* transform: translate(0,-50px); */
+    transform: scale(1);
+    /* opacity: 0; */
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .55s linear;
+}
+.modal_content{
 
+}
+.phone_icon{
+    position: relative;
+    top: 2.6rem;
+    left: 2rem;
+}
+.phone_number{
+    position: relative;
+    left: 4rem;
+    top: 1.4rem;
+}
+.mail_icon{
+    position: relative;
+    left: 2rem;
+    top: 0.6rem;
+}
+.my_emails{
+    position: relative;
+    /* top: 1rem; */
+    bottom: 0.8rem;
+    left: 4.1rem;
+}
+.close{
+    position: absolute;
+    /* float: right; */
+    right: 4%;
+    cursor: pointer;
+    font-weight: 600;
+}
 /* ========================================================================================================
    ======================================================================================================== */
 @media (min-width: 1000px) {
@@ -397,6 +470,16 @@
         position: relative;
         bottom: 83px;
     }
+    .hire_mask{
+        display: none;
+        height: 100.1px;
+        width: 100%;
+        background-color: #251707;
+        opacity: 0.8;
+        position: relative;
+        bottom: 65px;
+        top: -101px;
+    }
     .content_text{
         /* display: none;  */
         /* position: relative; */
@@ -408,6 +491,17 @@
         /* bottom: 6%; */
         /* bottom: 163px; */
         /* margin-top: 1111px; */
+    }
+    .moto_text{
+        position: relative;
+        /* top: 50%; */
+        /* left: 50%; */
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        bottom: 0px;
+        bottom: -60px;
+        left: 28px;
+        font-size: 20px;
     }
     .content_text p{
             /* display: none; */
@@ -604,6 +698,7 @@
         top: 35px;
         /* left: -12px; */
         right: 51px;
+        cursor: pointer;
     }
     ::placeholder {
         color: rgb(158, 134, 107);

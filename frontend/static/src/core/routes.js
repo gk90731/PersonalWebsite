@@ -21,7 +21,7 @@ export default class Routes extends Component {
                     <Route path="/blogTopic" {...this.props} component={PostTopic}></Route>
                     <Route path="/bolgDetail/:Id" {...this.props} component={PostDetail}></Route>
                     
-                    <Route path="/exp" component={Formatter}></Route>
+                    <Route path="/exp/3" component={PostDetail}></Route>
                 </Switch>
             </Router>
         </div>
