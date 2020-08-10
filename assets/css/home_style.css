@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #272829;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 0.4px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+h3{
+    font-weight: 700;
+    font-size: 25px;
+    color: #173b6c;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+.d-row{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+}
+.row-div{
+    display: flex;
+    flex-direction: row;
+}
+.col-2{
+    width:46%;
+    overflow: hidden;
+}
+/* =========
+            nav-sidebar =============================== */
+.nav-sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #040b14;
+    overflow-y: auto;
+}
+/* ---------
+            nav-header  -------------------------------- */
+.nav-header{
+    display: flex;
+    flex-direction: column;
+}
+.profile-pic-round-md{
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 8px solid #2c2f3f;
+}
+.profile-name{
+    font-size: 26px;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.7px;
+    color: white;
+}
+.social-media-md{
+    text-align: center;
+    margin-top: 1rem;
+}
+.social-media-md a{
+    font-size: 20px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 23px;
+    transition: 0.3s;
+}
+.social-media-md a:hover{
+    background: #149ddd;
+    text-decoration: none;
+}
+/* ---------
+            nav menu ------------------------------------ */
+.nav-menu{
+    margin-top: 15%;
+}
+.nav-menu *{
+    list-style: none;
+    text-decoration: none;
+}
+.nav-menu a{
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 17px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 18px;
+    line-height: 2;
+}
+.nav-menu i{
+    font-size: 22px;
+    padding-right: 8px;
+}
+/* ==========
+             banner =================================== */
+.banner{
+    background-image: url(../img/profile-pic-fp-masked.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* margin-left: 330.5px; */
+    /* padding-left: 330.5px; */
+}
+.typewriter{
+    color: white;
+    position: absolute;
+    top: 47vh;
+    left: calc(330.5px + 5%);
+    font-family: 'Raleway', sans-serif;
+}
+.typewriter :nth-child(1){
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+.typewriter :nth-child(2){
+    font-size: 28px;
+}
+.typewriter :nth-child(3){
+    font-size: 28px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #149ddd;
+    animation: blink 4s linear infinite;
+}
+.typewriter :nth-child(4){
+    font-size: 28px;
+    border-bottom: 3px solid #149ddd;
+}
+
+/* ============
+                about =============================================== */
+.about{
+    margin-left: 330.5px;
+    padding-top: 25px;
+}
+.about .container{
+    padding:25px;
+}
+.about-img{
+    width: 350px;
+    padding-top: 22px;
+    padding-right: 25px;
+    transition-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+}
+.description{
+    padding: 15px;
+}
+.about-icon{
+    font-size: 18px!important;
+    font-weight: bold!important;
+    color: #149ddd;
+    padding-right: 1%;
+}
+.about ul{
+    padding: 15px 0px;
+    line-height: 2;
+}
+/* ===========
+                skills ============================================== */
+
+.skills{
+    margin-left: 330.5px;
+    padding-top: 25px;
+    background: #f5f8fd;
+}
+.skills .container{
+    padding:25px;
+}
+.skill-name-head{
+    display: flex;
+    justify-content: space-between;
+    border:2px solid #173B6C;
+    padding:10px;
+    margin:22px 10px 10px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sub-skills-division{
+    display:none;
+    transition: 2s;
+}
+.skill-name-container{
+    margin:5px 6%;
+}
+.skill-name-percent{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-bar{
+    margin-top: 4px;
+    height:9px;
+    width: 100%;
+    background-color: rgb(225, 235, 252);
+}
+.skill-progress{
+    background-color: #149ddd;
+    height:100%;
+}
+.collapsable-bar-active{
+    border-style:solid solid dashed solid;
+}
