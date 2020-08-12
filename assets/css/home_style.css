@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -233,16 +236,16 @@ li{
     font-weight: 600;
     cursor: pointer;
 }
-.sub-skills-division{
-    display:none;
-    transition: 2s;
-}
 .skill-name-container{
-    margin:5px 6%;
+    margin:11px 6%;
 }
 .skill-name-percent{
     display: flex;
     justify-content: space-between;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    font-weight: 600;
+
 }
 .skill-bar{
     margin-top: 4px;
@@ -254,6 +257,118 @@ li{
     background-color: #149ddd;
     height:100%;
 }
-.collapsable-bar-active{
-    border-style:solid solid dashed solid;
+/* -----------
+                accordian styles ---------------------------------------------------------- */
+                
+                
+.accordion-tab > .accordion-toggle{
+    position: absolute;
+    display: none;
+}
+
+.accordion-tab > label{
+    color: rgb(65, 64, 64);
+    border: 2px solid #173B6C;
+    font-size: 16px;
+    /* line-height: 24px; */
+    font-weight: 700;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.accordion-tab > .accordion-content{
+    max-height: 0;
+    transition: all .40s;
+    overflow: hidden;
+}
+
+.accordion-tab > label:after {
+    content: '\f078';
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-family: fontawesome;
+    transform: rotate(0deg);
+    transition:transform .30s ;
+}
+
+.accordion-tab > .accordion-toggle:checked ~ label:after{
+    transform: rotate(180deg);
+}
+
+.accordion-tab > .accordion-toggle:checked ~ label{
+    border-style: solid solid dotted solid;
+}
+
+.accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+    max-height: 100vh;
+}
+
+
+
+/* ==========
+              Experience =================================================== */
+.experience{
+    margin-left: 330.5px;
+    padding-top: 25px;
+}
+.experience-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.exp-tab > h3{
+    margin: 19px;
+}
+.experience-wrapper{
+    padding: 25px;
+} 
+.exp-description{
+    padding: 0 0 30px 20px;
+    margin-top: -2px;
+    border-left: 3px solid #1f5297;
+    position: relative;
+}
+.exp-description::before{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    left: -11px;
+    top: 0;
+    background: #fff;
+    border: 3px solid #1f5297;
+}
+.exp-description > span{
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgb(210, 225, 250);
+    padding: 3px 9px 3px 9px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.exp-description > h4{
+    margin-bottom: 5px;
+}
+.exp-description > p{
+    padding-left: 2px;
+}
+
+/* ===========
+                conatct ========================================= */
+.contact{
+    margin-left: 330.5px;
+    padding-top: 25px;
+}
+.contact-wrapper{
+    padding: 25px;
+} 
+
+.info{
+    padding: 30px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }

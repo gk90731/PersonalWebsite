@@ -1,0 +1,55 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+
+.accordion-tab > .accordion-toggle{
+    position: absolute;
+    display: none;
+}
+
+.accordion-tab > label{
+    color: rgb(65, 64, 64);
+    border: 2px solid #2980b9;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    position: relative;
+    display: block;
+    padding: 13px 40px 13px 20px;
+    cursor: pointer;
+}
+
+.accordion-tab > .accordion-content{
+    max-height: 0;
+    transition: all .40s;
+    overflow: hidden;
+}
+
+.accordion-tab > label:after {
+    content: '\f078';
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-family: fontawesome;
+    transform: rotate(0deg);
+    transition:transform .30s ;
+}
+
+.accordion-tab > .accordion-toggle:checked ~ label:after{
+    transform: rotate(180deg);
+}
+
+.accordion-tab > .accordion-toggle:checked ~ label{
+    border-style: solid solid dotted solid;
+}
+
+.accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+    max-height: 100vh;
+}
+
+.accordion-tab > .accordion-content p {
+    margin: 15px 0;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
